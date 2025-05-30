@@ -12,7 +12,7 @@
 
 1.  اسکریپت `tunnel_script.sh` را در هر دو سرور دانلود کنید. می‌توانید از دستور زیر برای دانلود و اجرای مستقیم اسکریپت استفاده کنید:
     ```bash
-    bash <(curl -sL https://raw.githubusercontent.com/raminol12/6to4/main/tunnel_script.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/ThyArt-IsMurder/6to4-GRE/refs/heads/main/tunnel_script.sh)
     ```
     یا به صورت دستی:
     *   اسکریپت را دانلود کنید.
@@ -57,18 +57,11 @@
 
 ## نکات مهم
 
-*   این اسکریپت تنظیمات را در فایل `/etc/rc.local` ذخیره می‌کند تا پس از راه‌اندازی مجدد سرور، تانل به صورت خودکار برقرار شود. <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
-*   پس از اجرای اسکریپت، ممکن است نیاز به راه‌اندازی مجدد سرور یا اجرای دستی `/etc/rc.local` داشته باشید. <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
+*   این اسکریپت تنظیمات را در فایل `/etc/rc.local` ذخیره می‌کند تا پس از راه‌اندازی مجدد سرور، تانل به صورت خودکار برقرار شود. <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
+*   پس از اجرای اسکریپت، ممکن است نیاز به راه‌اندازی مجدد سرور یا اجرای دستی `/etc/rc.local` داشته باشید. <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
 *   مطمئن شوید که فایروال سرورها اجازه عبور ترافیک مورد نیاز برای تانل‌ها (SIT و GRE) را می‌دهد.
-*   سرورها باید تمیز باشند و آی‌پی لوکال در سرور شما مسدود نباشد. <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
-*   داشتن آی‌پی ورژن 6 اصلاً مهم نیست، اسکریپت خودش آن را می‌سازد. <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
-*   اگر سرور ریستارت شود، تانل از کار می‌افتد و اسکریپت را باید مجدداً اجرا کنید (مگر اینکه `rc.local` به درستی تنظیم شده باشد). <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
-*   این تانل تمامی پورت‌ها را بصورت یکجا تانل می‌کند و نیازی به وارد کردن پورت خاصی نیست (به جز پورت SSH برای فورواردینگ اولیه در سمت ایران). <mcreference link="https://github.com/raminol12/6to4" index="0">0</mcreference>
+*   سرورها باید تمیز باشند و آی‌پی لوکال در سرور شما مسدود نباشد. <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
+*   داشتن آی‌پی ورژن 6 اصلاً مهم نیست، اسکریپت خودش آن را می‌سازد. <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
+*   اگر سرور ریستارت شود، تانل از کار می‌افتد و اسکریپت را باید مجدداً اجرا کنید (مگر اینکه `rc.local` به درستی تنظیم شده باشد). <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
+*   این تانل تمامی پورت‌ها را بصورت یکجا تانل می‌کند و نیازی به وارد کردن پورت خاصی نیست (به جز پورت SSH برای فورواردینگ اولیه در سمت ایران). <mcreference link="https://github.com/ThyArt-IsMurder/6to4-GRE" index="0">0</mcreference>
 
-
-## حمایت مالی
-
-اگر این پروژه برای شما مفید بوده است، می‌توانید از طریق آدرس‌های زیر از ما حمایت کنید:
-
-*   تتر (TRC20): `TKqV6MWsdcrGPXVK5DL2eTYz339Psp3Zwp`
-*   بیتکوین (BSC BEP20): `0x4f19f5071bc49833c4cd9c1e646c03db195c9ffe`
